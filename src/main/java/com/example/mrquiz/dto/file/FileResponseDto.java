@@ -2,7 +2,6 @@ package com.example.mrquiz.dto.file;
 
 import com.example.mrquiz.enums.FileStatus;
 import com.example.mrquiz.enums.FileType;
-import com.example.mrquiz.enums.MediaProcessingStatus;
 import lombok.Data;
 
 import java.time.LocalDateTime;
@@ -30,7 +29,6 @@ public class FileResponseDto {
     private Integer duration;
     private Map<String, Object> encodingInfo;
     private Map<String, Object> accessPermissions;
-    private MediaProcessingStatus processingStatus;
     private Map<String, Object> processingMetadata;
     private Map<String, Object> processedVariants;
     private LocalDateTime expiresAt;

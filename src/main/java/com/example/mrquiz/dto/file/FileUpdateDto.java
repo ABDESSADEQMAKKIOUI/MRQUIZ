@@ -1,7 +1,6 @@
 package com.example.mrquiz.dto.file;
 
 import com.example.mrquiz.enums.FileStatus;
-import com.example.mrquiz.enums.MediaProcessingStatus;
 import jakarta.validation.constraints.Size;
 import lombok.Data;
 
@@ -30,7 +29,6 @@ public class FileUpdateDto {
     private Integer duration;
     private Map<String, Object> encodingInfo;
     private Map<String, Object> accessPermissions;
-    private MediaProcessingStatus processingStatus;
     private Map<String, Object> processingMetadata;
     private Map<String, Object> processedVariants;
     private LocalDateTime expiresAt;
