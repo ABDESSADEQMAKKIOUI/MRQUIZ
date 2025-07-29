@@ -92,4 +92,11 @@ public class UserMapper extends BaseMapper<User, UserCreateDto, UserUpdateDto, U
         
         return dto;
     }
+
+    /**
+     * Verify password against hash
+     */
+    public boolean verifyPassword(String plainPassword, String hashedPassword) {
+        return passwordEncoder.matches(plainPassword, hashedPassword);
+    }
 }
